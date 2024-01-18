@@ -18,6 +18,7 @@ export const DESTINATIONS: Destination[] = [
 	},
 	{
 		name: 'destination4',
-		transport: 'console.log'
+		url:'http://example4.com/endpoint',
+		transport: 'http.get'
 	}
-]
+];

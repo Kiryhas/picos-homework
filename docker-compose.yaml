@@ -8,6 +8,7 @@ services:
     environment:
       - ENABLE_LOGGING=true
       - JWT_SECRET=12345
+      - STRATEGY=ANY
     depends_on:
       - mongo
     networks:
