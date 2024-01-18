@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "0db081b9-3190-48f2-9766-b77428a451b6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4766049"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/get-token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "YOUR_TOKEN_GOES_HERE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"payload\": { \"a\": 3, \"b\": 5 },\r\n\t\"strategy\": \"() => { return true; }\",\r\n\t\"possibleDestinations\": [\r\n\t\t{\r\n\t\t\t\"destination1\": true,\r\n\t\t\t\"destination2\": true,\r\n\t\t\t\"destination3\": true\r\n\t\t}, \r\n\t\t{\r\n\t\t\t\"destination1\": true,\r\n\t\t\t\"destination3\": false\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"destination1\": true,\r\n\t\t\t\"destination2\": true,\r\n\t\t\t\"destination4\": false\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"destination5\": true\r\n\t\t}\r\n\t]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/events",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
