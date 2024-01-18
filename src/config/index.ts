@@ -1,0 +1,1 @@
+export { DESTINATIONS } from './destinations';

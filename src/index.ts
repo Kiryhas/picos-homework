@@ -1,3 +1,6 @@
 import { Router } from 'express';
+import { eventsRouter, requireAuth, authRouter } from './api';
 
-const router = Router();
+export const appRouter = Router();
+appRouter.use(authRouter);
+appRouter.use(requireAuth, eventsRouter);

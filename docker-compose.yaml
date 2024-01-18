@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    image: picos-homework
+    ports:
+      - "3000:3000"
+    environment:
+      - ENABLE_LOGGING=true
+      - JWT_SECRET=12345
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mongo-data:
