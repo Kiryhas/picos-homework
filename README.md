@@ -9,7 +9,7 @@ Env Variables:\
 
 The project already has a strategy configured in the config.ts file.
 To launch the project:
-1. Make sure the **config.ts** file contains the correct strategy. After you build your image, it'll bundled into it so you'll have to rebuild it to update it.
+1. Make sure the **config.ts** file contains the correct strategy. After you build your image, it'll be bundled into it so you'll have to rebuild it to update it.
 2. Make sure the env variables in the **docker-compose** file are correct.
 3. From the repository folder run `docker build -t picos-homework .`
 4. From the repository folder run `docker compose up -d`
