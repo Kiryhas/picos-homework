@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import _ from "lodash";
 import { IncomingEvent } from "../../../types";
-import { DESTINATIONS } from "../../../config";
+import { DESTINATIONS } from "../../../../config";
 import { ParamsDictionary } from "express-serve-static-core";
 import { getDestinationValidator, getValuesByDestination } from "./utils";
 import { DestinationService, Logger } from "../../../services";
