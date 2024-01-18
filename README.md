@@ -1,5 +1,5 @@
 To lauch the backend only you must have:
-**Node.js18+**
+**Node.js18+**\
 To launch the backend with docker-compose you must have **Docker** installed.
 
 Env Variables:\
